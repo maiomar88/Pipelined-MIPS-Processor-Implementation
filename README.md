@@ -8,7 +8,7 @@ Phase 2: Building Pipeline processor
 Design the control logic to detect data dependencies among instructions and implement the forwarding logic, handle properly the control hazards of the branch and jump instructions. Also, stall the pipeline after a LW instruction, if it is followed by a dependent instruction.
 Testing and verification
 To demonstrate that  CPU is working:
-we  test all components and sub-circuits independently to ensure their correctness. For example, test the correctness of the ALU, the register file, the control logic separately, before putting your components together.
+we  test all components and sub-circuits independently to ensure their correctness. For example, test the correctness of the ALU, the register file, the control logic separately, before putting our components together.
  Test each instruction independently to ensure its correct execution.
  Write a sequence of instructions to verify the correctness of ALL instructions : the correctness of all ALU R-type and I-type instructions, LW and SW instructions,  all branch and jump instructions.
  Testing in phase_2: Test sequences of dependent instructions to ensure the correctness of the forwarding logic. Also, test a LW (load word) followed by a dependent instruction to ensure stalling the pipeline correctly by one clock cycle.
